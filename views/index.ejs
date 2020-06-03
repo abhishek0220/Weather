@@ -9,10 +9,17 @@
   <body>
     <div class="container">
       <fieldset>
+        <h1> Weather WebAPP</h1>
         <form action="/" method="post">
           <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
           <input type="submit" class="ghost-button" value="Get Weather">
         </form>
+        <% if(weather !== null){ %>
+          <p style='color:blue;'> <%= weather %> </p>
+        <% } %>
+        <% if(error !== null){ %>
+          <p> <%= error %> </p>
+        <% } %>
       </fieldset>
     </div>
   </body>
