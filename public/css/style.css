@@ -9,9 +9,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-body {
-    font-family: 'Open Sans', sans-serif;
-  }
   .container {
     position: absolute;
     left: 50%;
